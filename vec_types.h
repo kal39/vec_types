@@ -1,5 +1,5 @@
-#ifndef GLSL_VECTOR_TYPES_H
-#define GLSL_VECTOR_TYPES_H
+#ifndef VEC_TYPES_H
+#define VEC_TYPES_H
 
 typedef unsigned int uint;
 
@@ -167,7 +167,7 @@ typedef union {
 
 #endif
 
-#ifndef GLSL_VECTOR_TYPES_IMPLEMENTATION
+#ifdef VEC_TYPES_IMPLEMENTATION
 
 #include <math.h>
 

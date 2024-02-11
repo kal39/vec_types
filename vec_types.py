@@ -13,8 +13,8 @@ if __name__ == '__main__':
     ]
 
     with open(sys.argv[1], 'w') as f:
-        f.write("#ifndef GLSL_VECTOR_TYPES_H\n")
-        f.write("#define GLSL_VECTOR_TYPES_H\n\n")
+        f.write("#ifndef VEC_TYPES_H\n")
+        f.write("#define VEC_TYPES_H\n\n")
 
         # ==================================================================== #
         # define uint
@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
         f.write("#endif\n\n")
 
-        f.write("#ifndef GLSL_VECTOR_TYPES_IMPLEMENTATION\n\n")
+        f.write("#ifdef VEC_TYPES_IMPLEMENTATION\n\n")
         f.write("#include <math.h>\n\n")
 
         # ==================================================================== #
