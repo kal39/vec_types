@@ -33,6 +33,7 @@ typedef union {
     float _0;
     float _1;
     float _2;
+    float _padding;
   };
 } vec3;
 
@@ -87,6 +88,7 @@ typedef union {
     float _0;
     float _1;
     float _2;
+    float _padding;
   };
 } ivec3;
 
@@ -141,6 +143,7 @@ typedef union {
     uint _0;
     uint _1;
     uint _2;
+    uint _padding;
   };
 } uvec3;
 

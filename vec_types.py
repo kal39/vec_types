@@ -34,6 +34,8 @@ if __name__ == '__main__':
                     f.write(f"  struct {{\n")
                     for k in range(i):
                         f.write(f"    {v_type[1]} {v_element_names[j][k]};\n")
+                    if i == 3 and v_element_names[j][k][0] == "_":
+                        f.write(f"    {v_type[1]} _padding;\n")
                     f.write(f"  }};\n")
 
                 f.write(f"}} {v_type[0]}{i};\n\n")
